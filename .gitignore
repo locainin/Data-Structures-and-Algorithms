@@ -1,0 +1,12 @@
+/AssignmentOne
+
+# Build artifacts
+*.o
+*.obj
+*.out
+*.exe
+
+# Local binaries created in lab folders
+main
+test
+template_calculator
