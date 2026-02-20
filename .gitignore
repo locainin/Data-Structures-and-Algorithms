@@ -2,5 +2,17 @@
 
 # Build artifacts
 *.o
+# Local binaries created in lab folders
+main
+test
+template_calculator
 
+# Python artifacts
+__pycache__/
+*.pyc
 
+# Generated dashboard benchmark payload
+Demonstrations/web/data/results.json
+
+# Local lint cache
+Demonstrations/.ruff_cache/
