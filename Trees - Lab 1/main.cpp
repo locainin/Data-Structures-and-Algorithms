@@ -25,7 +25,7 @@ int main() {
   }
 
   cout << "\nInsertion order: ";
-  for (size_t index = 0; index < insertionOrder.size(); ++index) {
+  for (size_t index = 0; index < insertionOrder.size(); index++) {
     cout << insertionOrder[index];
     if (index + 1 < insertionOrder.size()) {
       cout << " -> ";

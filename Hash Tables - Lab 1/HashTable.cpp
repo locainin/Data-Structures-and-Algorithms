@@ -146,7 +146,7 @@ void HashTable::remove(int key) {
 }
 
 void HashTable::print() const {
-  for (size_t index = 0; index < buckets.size(); ++index) {
+  for (size_t index = 0; index < buckets.size(); index++) {
     cout << "Bucket " << index << ": ";
     HashNode *current = buckets[index];
 

@@ -83,7 +83,7 @@ vector<int> buildInputValues(size_t valueCount, int minValue, int maxValue, unsi
   uniform_int_distribution<int> distribution(minValue, maxValue); // inclusive random range
 
   vector<int> values(valueCount); // output buffer
-  for (size_t index = 0; index < values.size(); ++index) {
+  for (size_t index = 0; index < values.size(); index++) {
     values[index] = distribution(numberGenerator); // fill each position
   }
   return values;
@@ -103,7 +103,7 @@ void printSample(const vector<int> &values, size_t previewCount) {
   cout << '[';
   if (values.size() <= previewCount * 2) {
     // short input prints in full
-    for (size_t index = 0; index < values.size(); ++index) {
+    for (size_t index = 0; index < values.size(); index++) {
       cout << values[index];
       if (index + 1 < values.size()) {
         cout << ", ";
@@ -111,13 +111,13 @@ void printSample(const vector<int> &values, size_t previewCount) {
     }
   } else {
     // long input prints head and tail slices
-    for (size_t index = 0; index < previewCount; ++index) {
+    for (size_t index = 0; index < previewCount; index++) {
       cout << values[index] << ", ";
     }
 
     cout << "..."; // hidden middle
 
-    for (size_t index = values.size() - previewCount; index < values.size(); ++index) {
+    for (size_t index = values.size() - previewCount; index < values.size(); index++) {
       cout << ", " << values[index];
     }
   }

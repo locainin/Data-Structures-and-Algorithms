@@ -10,7 +10,7 @@
   size_t comparisons = 0; // track comparisons made
 
   // go through each element
-  for (size_t i = 0; i < data.size(); ++i) {
+  for (size_t i = 0; i < data.size(); i++) {
     comparisons++; // count equality check
 
     // found target

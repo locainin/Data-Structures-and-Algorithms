@@ -63,8 +63,8 @@ Graph buildCityGraph() {
   };
 
   // only use upper triangle to avoid duplicate edge inserts
-  for (size_t rowIndex = 0; rowIndex < cityNames.size(); ++rowIndex) {
-    for (size_t columnIndex = rowIndex + 1; columnIndex < cityNames.size(); ++columnIndex) {
+  for (size_t rowIndex = 0; rowIndex < cityNames.size(); rowIndex++) {
+    for (size_t columnIndex = rowIndex + 1; columnIndex < cityNames.size(); columnIndex++) {
       if (adjacencyMatrix[rowIndex][columnIndex] != 0) {
         cityGraph.addEdge(cityNames[rowIndex], cityNames[columnIndex]);
       }

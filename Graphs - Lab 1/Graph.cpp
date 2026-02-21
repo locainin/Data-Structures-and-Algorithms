@@ -81,7 +81,7 @@ void Graph::display() const {
   cout << "Undirected edges: " << edgeCount() << '\n';
   cout << "---------------------------------------------------------\n";
 
-  for (size_t vertexIndex = 0; vertexIndex < vertexNames.size(); ++vertexIndex) {
+  for (size_t vertexIndex = 0; vertexIndex < vertexNames.size(); vertexIndex++) {
     cout << "[" << vertexNames[vertexIndex] << "] -> ";
 
     bool hasNeighbors = false;
@@ -133,12 +133,12 @@ void Graph::breadthFirstSearch(const string &startVertex) const {
   }
 
   cout << "BFS starting at " << startVertex << '\n';
-  for (size_t orderIndex = 0; orderIndex < visitOrder.size(); ++orderIndex) {
+  for (size_t orderIndex = 0; orderIndex < visitOrder.size(); orderIndex++) {
     cout << "  Step " << orderIndex + 1 << ": visit " << vertexNames[visitOrder[orderIndex]] << '\n';
   }
 
   cout << "  Order: ";
-  for (size_t orderIndex = 0; orderIndex < visitOrder.size(); ++orderIndex) {
+  for (size_t orderIndex = 0; orderIndex < visitOrder.size(); orderIndex++) {
     if (orderIndex > 0) {
       cout << " -> ";
     }
@@ -161,12 +161,12 @@ void Graph::depthFirstSearch(const string &startVertex) const {
   depthFirstSearchImpl(startIndex, visited, traversalOrder);
 
   cout << "DFS starting at " << startVertex << '\n';
-  for (size_t orderIndex = 0; orderIndex < traversalOrder.size(); ++orderIndex) {
+  for (size_t orderIndex = 0; orderIndex < traversalOrder.size(); orderIndex++) {
     cout << "  Step " << orderIndex + 1 << ": visit " << vertexNames[traversalOrder[orderIndex]] << '\n';
   }
 
   cout << "  Order: ";
-  for (size_t orderIndex = 0; orderIndex < traversalOrder.size(); ++orderIndex) {
+  for (size_t orderIndex = 0; orderIndex < traversalOrder.size(); orderIndex++) {
     if (orderIndex > 0) {
       cout << " -> ";
     }

@@ -54,7 +54,7 @@ void mergeHalves(vector<int> &values, vector<int> &tempSpace, size_t leftIndex, 
   }
 
   // copy merged result back to source vector
-  for (size_t assignIndex = leftIndex; assignIndex <= rightIndex; ++assignIndex) {
+  for (size_t assignIndex = leftIndex; assignIndex <= rightIndex; assignIndex++) {
     values[assignIndex] = tempSpace[assignIndex];
     stats.writes++;
   }

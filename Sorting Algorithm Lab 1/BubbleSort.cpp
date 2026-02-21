@@ -15,9 +15,11 @@ SortStats bubbleSort(vector<int> &values) {
   size_t unsortedEnd = values.size() - 1; // tail boundary for this pass
   bool swapped = true;                    // early stop when no swaps happen
 
+  // Keep iterating until a full pass performs zero swaps
   while (swapped) {
     swapped = false; // assume sorted until a swap is seen
-    for (size_t index = 0; index < unsortedEnd; ++index) {
+    // Traverse the unsorted prefix and compare adjacent values
+    for (size_t index = 0; index < unsortedEnd; index++) {
       const size_t nextIndex = index + 1; // adjacent right element
       stats.comparisons++;                // compare neighbors
       if (values[index] > values[nextIndex]) {

@@ -14,11 +14,11 @@ SortStats selectionSort(vector<int> &values) {
   }
 
   // grow a sorted prefix from left to right
-  for (size_t sortedIndex = 0; sortedIndex + 1 < values.size(); ++sortedIndex) {
+  for (size_t sortedIndex = 0; sortedIndex + 1 < values.size(); sortedIndex++) {
     size_t smallestIndex = sortedIndex; // current best candidate
 
     // find smallest value in remaining unsorted range
-    for (size_t scanIndex = sortedIndex + 1; scanIndex < values.size(); ++scanIndex) {
+    for (size_t scanIndex = sortedIndex + 1; scanIndex < values.size(); scanIndex++) {
       stats.comparisons++; // compare candidate values
       if (values[scanIndex] < values[smallestIndex]) {
         smallestIndex = scanIndex; // new minimum found
