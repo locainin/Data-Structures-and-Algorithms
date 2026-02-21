@@ -1,22 +1,24 @@
-# Demonstrations
+# Data Structures and Algorithms
 
 Visual and CLI demonstrations for data structures and algorithm optimization.
 
 ## Dashboard Preview
 
-![Dashboard Preview](assets/display.png)
+![Dashboard Preview](Demonstrations/assets/display.png)
 
 ## Run Web App
 
-From this folder:
+From the repository root:
 
 ```bash
+cd Demonstrations
 ./run_web_demo.sh
 ```
 
 Optional custom port:
 
 ```bash
+cd Demonstrations
 ./run_web_demo.sh 9000
 ```
 
