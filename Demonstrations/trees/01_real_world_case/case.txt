@@ -1,0 +1,3 @@
+Real-world case: product catalog index
+Problem: perform many exact and range lookups by product id
+Pain point: flat-list scans become slower as catalog grows

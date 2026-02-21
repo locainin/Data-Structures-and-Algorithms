@@ -1,0 +1,3 @@
+Real-world case: city delivery routing
+Problem: answer many route reachability checks between intersections
+Pain point: scanning the full road list repeatedly causes avoidable overhead

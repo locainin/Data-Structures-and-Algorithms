@@ -1,0 +1,3 @@
+Real-world case: ticket handling queue
+Problem: process oldest support tickets first while tracking undo actions
+Pain point: front-removal on dynamic arrays triggers repeated shifts

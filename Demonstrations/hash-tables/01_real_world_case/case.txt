@@ -1,0 +1,3 @@
+Real-world case: API session/token validation
+Problem: validate incoming tokens at high request volume
+Pain point: linear token checks do not scale under load

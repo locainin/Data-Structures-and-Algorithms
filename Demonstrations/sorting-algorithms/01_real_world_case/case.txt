@@ -1,0 +1,3 @@
+Real-world case: daily transaction ordering for reports
+Problem: sort a large transaction list each day
+Pain point: naive O(n^2) sorting is too slow as data grows

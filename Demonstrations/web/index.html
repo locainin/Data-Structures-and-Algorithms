@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Structures Demonstrations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Data Structures Learning Lab</p>
+        <h1>Data Structure Benchmarks and Code Walkthrough</h1>
+        <p class="subtitle">
+          Each section shows the baseline code, optimized code, why performance changed, and benchmark results from this machine.
+        </p>
+        <p class="meta" id="generated-at">Loading benchmark results...</p>
+      </header>
+
+      <section class="summary" id="summary"></section>
+      <section class="concepts" id="concepts"></section>
+    </main>
+
+    <template id="concept-template">
+      <article class="concept-card">
+        <div class="card-head">
+          <h2 class="concept-title"></h2>
+          <span class="chip focus-chip"></span>
+        </div>
+
+        <div class="knowledge-grid">
+          <article class="knowledge-box">
+            <h3>What It Is</h3>
+            <p data-field="definition"></p>
+          </article>
+          <article class="knowledge-box">
+            <h3>Used For</h3>
+            <p data-field="used-for"></p>
+          </article>
+          <article class="knowledge-box wide">
+            <h3>Case Context</h3>
+            <p><strong>Case:</strong> <span data-field="case"></span></p>
+            <p><strong>Problem:</strong> <span data-field="problem"></span></p>
+            <p><strong>Pain Point:</strong> <span data-field="pain"></span></p>
+          </article>
+        </div>
+
+        <div class="diff-story">
+          <article class="story-card unoptimized-card">
+            <h3>Why Baseline Is Slow</h3>
+            <p data-field="why-unoptimized"></p>
+            <p><strong>Structure:</strong> <span data-field="unoptimized-structure"></span></p>
+            <p><strong>Behavior:</strong> <span data-field="before-complexity"></span></p>
+          </article>
+          <article class="story-card optimized-card">
+            <h3>Small Change With Big Impact</h3>
+            <p data-field="small-change"></p>
+            <p><strong>Structure:</strong> <span data-field="optimized-structure"></span></p>
+            <p><strong>Behavior:</strong> <span data-field="after-complexity"></span></p>
+          </article>
+        </div>
+
+        <div class="timing">
+          <div class="timing-row">
+            <span class="label">Unoptimized</span>
+            <div class="bar-track"><div class="bar bar-unoptimized"></div></div>
+            <span class="mono" data-field="unoptimized-ms"></span>
+          </div>
+          <div class="timing-row">
+            <span class="label">Optimized</span>
+            <div class="bar-track"><div class="bar bar-optimized"></div></div>
+            <span class="mono" data-field="optimized-ms"></span>
+          </div>
+        </div>
+
+        <p class="speedup" data-field="speedup"></p>
+
+        <details class="code-details">
+          <summary>Code Comparison</summary>
+          <section class="code-section">
+            <div class="code-grid">
+              <article class="code-panel">
+                <h4>Unoptimized Code</h4>
+                <pre class="output" data-field="unoptimized-code"></pre>
+              </article>
+              <article class="code-panel">
+                <h4>Optimized Code</h4>
+                <pre class="output" data-field="optimized-code"></pre>
+              </article>
+            </div>
+          </section>
+        </details>
+
+        <details>
+          <summary>Program Output</summary>
+          <pre class="output" data-field="raw-output"></pre>
+        </details>
+      </article>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

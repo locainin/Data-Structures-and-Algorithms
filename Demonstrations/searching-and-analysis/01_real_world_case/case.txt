@@ -1,0 +1,3 @@
+Real-world case: customer ID lookup during support calls
+Problem: many repeated queries against a growing customer list
+Pain point: full scans for each query waste time

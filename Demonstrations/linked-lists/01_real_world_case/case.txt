@@ -1,0 +1,3 @@
+Real-world case: interactive playlist editing
+Problem: frequent inserts and removals around current track
+Pain point: array-based shifting creates extra work per operation
